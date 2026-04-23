@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #050505;
+  color: white;
+  margin: 0;
+  min-height: 100vh;
+  
+  /* Modern Mesh Gradient */
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(30, 64, 175, 0.2) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(147, 51, 234, 0.2) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(30, 64, 175, 0.2) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(147, 51, 234, 0.2) 0px, transparent 50%);
+  background-attachment: fixed;
+}
