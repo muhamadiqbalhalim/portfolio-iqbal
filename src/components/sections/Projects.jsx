@@ -4,87 +4,100 @@ import { motion } from "framer-motion";
 export default function Projects() {
   const projects = [
     {
-      title: "AI-Powered AMR Analytics Platform",
-      desc: "Smart factory analytics platform leveraging AI-driven insights, Grafana visualization, and predictive monitoring for Autonomous Mobile Robot performance optimization.",
-      images: ["/amr-dashboard.png"],
-      tech: [
-        "Python",
-        "Grafana",
-        "AI",
-        "Machine Learning",
-      ],
-      link: "#",
-    },
-
-    {
-      title: "RFID Rack Tracking System",
-      desc: "Industrial RFID tracking solution designed to monitor rack movements during loading and unloading operations with real-time dashboard monitoring and automated status tracking.",
-      images: ["/rfid-tracking.png"],
-      tech: [
-        "RFID",
-        "IoT",
-        "React",
-        "Node.js",
-      ],
-      link: "#",
-    },
-
-    {
-      title: "E-Voting Management Platform",
-      desc: "Secure digital voting platform featuring authentication, real-time vote counting, Firebase integration, and administrative election management.",
+      title: "E-Voting Management System",
+      desc: "Developed a web-based voting platform for managing elections, candidate registration, voter authentication, and real-time result tracking. Built during my Digital Solution Developer programme to streamline organizational voting processes.",
       images: ["/evoting-dashboard.png"],
       tech: [
         "React",
         "Firebase",
-        "Tailwind",
+        "JavaScript",
+        "Tailwind CSS",
       ],
       link: "#",
     },
 
     {
-      title: "Fancy Plate Detection System",
-      desc: "Computer vision solution utilizing YOLOv8 to identify and classify non-compliant vehicle registration plates with automated reporting capabilities.",
+      title: "QC Training Management System",
+      desc: "Designed and developed a training management platform to support quality control operations. Features include training records management, user tracking, progress monitoring, and centralized administrative controls.",
+      images: ["/qc-training.png"],
+      tech: [
+        "React",
+        "Firebase",
+        "JavaScript",
+        "SQL",
+      ],
+      link: "#",
+    },
+
+    {
+      title: "Real-Time Vehicle Plate Detection",
+      desc: "Final Year Project involving a mobile application that detects Malaysian vehicle registration plates in real time using YOLOv8. Integrated Firebase for data storage and reporting.",
       images: ["/vrpdetection.jpg"],
       tech: [
         "Python",
         "YOLOv8",
+        "Firebase",
         "Android Studio",
       ],
       link: "#",
     },
 
     {
-      title: "Campus Lost & Found Platform",
-      desc: "Centralized campus item management platform with intelligent search capabilities, verification workflows, and administrative dashboards.",
-      images: ["/lostfoundhomepage.png"],
+      title: "Task Management System",
+      desc: "Developed a task management application that enables users to organize, track, and manage daily activities efficiently through a user-friendly interface and database integration.",
+      images: ["/task-management.png"],
       tech: [
-        "PHP",
-        "MySQL",
-        "JavaScript",
+        "Java",
+        "HTML",
+        "CSS",
+        "SQL",
       ],
-      link:
-        "https://github.com/muhamadiqbalhalim/LostFound.git",
+      link: "#",
     },
+
+    {
+      title: "Social Volunteer Application",
+      desc: "Built an Android-based application that allows volunteers to register, discover, and participate in community programmes with role-based access and event management capabilities.",
+      images: ["/volunteer-app.png"],
+      tech: [
+        "Java",
+        "Android Studio",
+        "SQL",
+      ],
+      link: "#",
+    },
+
+  { 
+    title: "Campus Lost & Found Platform", 
+    desc: "Centralized campus item management platform with intelligent search capabilities, verification workflows, and administrative dashboards.", 
+    images: ["/lostfoundhomepage.png"], 
+    tech: [ 
+      "PHP", 
+      "MySQL", 
+      "JavaScript", 
+    ], 
+    link: "https://github.com/muhamadiqbalhalim/LostFound.git", 
+    }, 
   ];
 
-  const stats = [
-    {
-      value: "5+",
-      label: "Projects Delivered",
-    },
-    {
-      value: "12+",
-      label: "Technologies Used",
-    },
-    {
-      value: "4",
-      label: "Specializations",
-    },
-    {
-      value: "100%",
-      label: "Built By Me",
-    },
-  ];
+    const stats = [
+      {
+        value: "06+",
+        label: "Projects Built",
+      },
+      {
+        value: "10+",
+        label: "Technologies",
+      },
+      {
+        value: "02",
+        label: "Industry Experiences",
+      },
+      {
+        value: "100%",
+        label: "Hands-On Development",
+      },
+    ];
 
   return (
     <section
@@ -130,11 +143,10 @@ export default function Projects() {
               leading-relaxed
             "
           >
-            A collection of software engineering,
-            AI analytics, RFID automation and
-            enterprise-focused solutions developed
-            to solve real-world operational and
-            business challenges.
+          A collection of software applications,
+          web platforms, and machine learning
+          projects developed through academic,
+          internship, and industry experiences.
           </p>
 
         </div>

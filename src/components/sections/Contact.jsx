@@ -57,11 +57,11 @@ export default function Contact() {
           </div>
 
           <h2 className="text-5xl md:text-7xl font-bold leading-[0.95] text-white">
-            Let's Work
+            Let's Build
             <br />
 
             <span className="text-blue-400">
-              Together.
+              Something Great.
             </span>
           </h2>
 
@@ -95,21 +95,21 @@ export default function Contact() {
                   <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
 
                   <p className="text-[10px] uppercase tracking-[0.35em] text-green-400">
-                    Available For Opportunities
+                    Open For Opportunities
                   </p>
                 </div>
 
-                <p className="text-zinc-400 leading-relaxed">
-                  Currently open to Software Engineering,
-                  Full Stack Development, Network Engineering,
-                  AI-focused projects and technology collaborations.
-                </p>
+              <p className="text-zinc-400 leading-relaxed">
+                Currently open to opportunities in Software Engineering,
+                Software Development, Application Development, and
+                Full Stack Development.
+              </p>
 
-                <p className="mt-6 text-zinc-500 leading-relaxed">
-                  Whether you're looking for a developer,
-                  engineer, collaborator, or someone to build
-                  intelligent solutions, let's connect.
-                </p>
+              <p className="mt-6 text-zinc-500 leading-relaxed">
+                Feel free to reach out if you're looking for a developer,
+                have an exciting project in mind, or would like to discuss
+                potential opportunities and collaborations.
+              </p>
 
               </div>
 
@@ -142,7 +142,7 @@ export default function Contact() {
                   </p>
 
                   <p className="text-white">
-                    Kuala Lumpur, Malaysia
+                    Shah Alam, Selangor, Malaysia
                   </p>
                 </div>
 
@@ -213,6 +213,27 @@ export default function Contact() {
                   GitHub Profile
                 </a>
 
+                <a
+                href="/Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="
+                  w-full
+                  py-4
+                  rounded-xl
+                  border
+                  border-white/10
+                  text-center
+                  text-sm
+                  text-zinc-300
+                  hover:border-blue-400/30
+                  hover:text-white
+                  transition-all
+                "
+              >
+                Download Resume
+              </a>
+
               </div>
 
             </div>
@@ -245,7 +266,7 @@ export default function Contact() {
                 </p>
 
                 <h3 className="text-2xl font-semibold text-white">
-                  Tell Me About Your Project
+                  Start A Conversation
                 </h3>
 
               </div>
@@ -255,7 +276,7 @@ export default function Contact() {
                 <input
                   name="name"
                   required
-                  placeholder="NAME"
+                  placeholder="Your Name"
                   className="
                     w-full
                     bg-transparent
@@ -274,7 +295,7 @@ export default function Contact() {
                   name="email"
                   type="email"
                   required
-                  placeholder="EMAIL"
+                  placeholder="Your Email"
                   className="
                     w-full
                     bg-transparent
@@ -293,7 +314,7 @@ export default function Contact() {
                   name="message"
                   rows="8"
                   required
-                  placeholder="MESSAGE"
+                  placeholder="Tell me about your project or opportunity"
                   className="
                     w-full
                     bg-transparent

@@ -3,32 +3,35 @@ import { motion } from "framer-motion";
 export default function Experience() {
   const experiences = [
     {
-      year: "2025 — Present",
-      title: "Network Engineer",
-      company: "Telekom Malaysia",
+      year: "2026 - Present",
+      title: "Digital Solution Developer (Protege)",
+      company: "Namicoh Suria Sdn. Bhd.",
       description:
-        "Supporting enterprise network operations, infrastructure reliability, telecommunications services and digital transformation initiatives across mission-critical environments.",
+        "Currently participating in the K-Youth Employability Programme as a Digital Solution Developer. Responsible for maintaining internal applications, providing technical support, developing new system features, and contributing to software solutions that improve operational efficiency.",
     },
+
     {
-      year: "2024 — 2025",
-      title: "AI-Powered AMR Analytics Platform",
+      year: "2025",
+      title: "Software Engineer Intern",
+      company: "Blue Ocean IT Sdn. Bhd.",
+      description:
+        "Worked on enterprise software projects involving ETL development, SQL development, debugging, system integration, and application support within an agile development environment.",
+    },
+
+    {
+      year: "2025",
+      title: "Real-Time Vehicle Plate Detection Using YOLOv8",
       company: "Final Year Project",
       description:
-        "Developed an intelligent analytics platform for Autonomous Mobile Robots (AMR) using AI-driven monitoring, predictive analytics and Grafana visualization.",
+        "Developed a mobile application capable of detecting Malaysian vehicle registration plates in real time using YOLOv8 and Firebase, focusing on computer vision and machine learning technologies.",
     },
+
     {
-      year: "2024",
-      title: "RFID Rack Tracking System",
-      company: "Industrial Tracking Solution",
+      year: "2024 - 2025",
+      title: "Software Development Projects",
+      company: "Academic Projects",
       description:
-        "Designed and developed RFID-based operational tracking for loading and unloading verification with real-time dashboard monitoring.",
-    },
-    {
-      year: "2023 — 2024",
-      title: "Full Stack Development Projects",
-      company: "Academic & Personal Projects",
-      description:
-        "Built multiple web applications including E-Voting Platform, Lost & Found System, Fancy Plate Detection and responsive business solutions.",
+        "Developed multiple applications including a Task Management System, Social Volunteer Application, and machine learning projects involving predictive modelling and data processing.",
     },
   ];
 

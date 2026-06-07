@@ -3,46 +3,48 @@ import { motion } from "framer-motion";
 export default function About() {
   const services = [
     {
-      title: "Network Engineering",
-      desc: "Designing, optimizing and maintaining enterprise-grade network infrastructures, connectivity solutions and operational reliability.",
-    },
-    {
       title: "Software Development",
-      desc: "Building scalable web applications, internal platforms and modern digital products with clean architecture.",
+      desc: "Building web applications, software solutions, and digital products using modern development technologies and clean coding practices.",
     },
     {
-      title: "AI & Automation",
-      desc: "Developing intelligent systems, automation workflows and data-driven solutions that improve efficiency.",
+      title: "Application Development",
+      desc: "Developing responsive web and mobile applications with a focus on usability, maintainability, and performance.",
     },
     {
-      title: "RFID & IoT Systems",
-      desc: "Bridging physical operations and digital intelligence through smart tracking, monitoring and automation.",
+      title: "System Integration & ETL",
+      desc: "Working with databases, ETL processes, and system integration workflows to support reliable data processing and enterprise software solutions.",
+    },
+    {
+      title: "Machine Learning Projects",
+      desc: "Developing machine learning and computer vision applications, including predictive models and real-time detection systems.",
     },
   ];
 
   const technologies = [
+    "Python",
+    "Java",
+    "SQL",
+    "React",
+    "JavaScript",
+    "Firebase",
+    "Flutter",
+    "Git",
     "React.js",
     "Node.js",
-    "Firebase",
-    "Python",
-    "AI Systems",
-    "Cisco",
-    "RFID",
-    "IoT",
   ];
 
   const stats = [
     {
-      value: "03+",
-      label: "Years Experience",
-    },
-    {
-      value: "05+",
+      value: "04+",
       label: "Projects Built",
     },
     {
-      value: "TM",
-      label: "Current Role",
+      value: "01",
+      label: "Internship",
+    },
+    {
+      value: "10+",
+      label: "Technologies",
     },
   ];
 
@@ -90,16 +92,13 @@ export default function About() {
                 text-white
               "
             >
-              BUILDING DIGITAL
-              <br />
-
-              <span className="text-blue-300/60">
-                SOLUTIONS
-              </span>
-
-              <br />
-
-              FOR THE FUTURE.
+            BUILDING SOFTWARE
+            <br />
+            <span className="text-blue-300/60">
+              THAT SOLVES
+            </span>
+            <br />
+            REAL PROBLEMS.
             </motion.h2>
 
             {/* Metrics */}
@@ -136,18 +135,17 @@ export default function About() {
             <div className="mt-10 space-y-6">
 
               <p className="text-zinc-400 text-base md:text-lg leading-relaxed">
-                I am a Computer Science graduate currently
-                working as a Network Engineer at Telekom Malaysia.
-                My passion lies at the intersection of networking,
-                software engineering, automation and emerging technologies.
+                I am a Computer Science graduate with hands-on experience in software development,
+                application development, and enterprise software solutions. During my Software
+                Engineering internship, I worked on ETL processes, software debugging, SQL
+                development, and system integration within an agile development environment.
               </p>
 
               <p className="text-zinc-400 text-base md:text-lg leading-relaxed">
-                Whether developing AI-powered analytics platforms,
-                RFID tracking solutions, internal applications or
-                modern web experiences, my focus remains the same:
-                solving real-world problems through technology that
-                delivers measurable impact.
+                My project experience includes machine learning applications, real-time vehicle
+                registration plate detection using YOLOv8, mobile application development, and
+                web-based systems. I enjoy building software that solves practical problems while
+                focusing on clean, maintainable, and scalable solutions.
               </p>
 
             </div>
@@ -185,11 +183,11 @@ export default function About() {
 
               <div className="flex flex-col sm:flex-row sm:justify-between gap-2 border-b border-white/10 pb-4">
                 <span className="text-xs uppercase tracking-[0.25em] text-zinc-500">
-                  Current Position
+                  Latest Experience
                 </span>
 
                 <span className="text-white">
-                  Network Engineer @ Telekom Malaysia
+                  Digital Solution Developer (Protege)
                 </span>
               </div>
 
@@ -205,11 +203,11 @@ export default function About() {
 
               <div className="flex flex-col sm:flex-row sm:justify-between gap-2 border-b border-white/10 pb-4">
                 <span className="text-xs uppercase tracking-[0.25em] text-zinc-500">
-                  Recognition
+                  Focus Area
                 </span>
 
                 <span className="text-blue-300">
-                  Dean's List Recipient
+                  Software Engineering
                 </span>
               </div>
 

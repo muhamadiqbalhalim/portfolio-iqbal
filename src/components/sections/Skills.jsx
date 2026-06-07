@@ -3,68 +3,69 @@ import { motion } from "framer-motion";
 export default function Skills() {
   const technicalSkills = [
     {
-      title: "Network Engineering",
+      title: "Programming Languages",
       skills: [
-        { name: "Cisco Networking", level: 90 },
-        { name: "Routing & Switching", level: 90 },
-        { name: "Network Security", level: 85 },
-        { name: "Infrastructure Management", level: 88 },
+        { name: "Python", level: 90 },
+        { name: "Java", level: 85 },
+        { name: "JavaScript", level: 80 },
+        { name: "SQL", level: 85 },
+      ],
+    },
+
+    {
+      title: "Web & Application Development",
+      skills: [
+        { name: "React", level: 85 },
+        { name: "HTML & CSS", level: 90 },
+        { name: "Firebase", level: 85 },
+        { name: "Flutter", level: 75 },
       ],
     },
 
     {
       title: "Software Engineering",
       skills: [
-        { name: "React.js", level: 90 },
-        { name: "JavaScript", level: 88 },
-        { name: "Node.js", level: 82 },
-        { name: "Tailwind CSS", level: 92 },
+        { name: "ETL Development", level: 85 },
+        { name: "Debugging", level: 90 },
+        { name: "Software Testing", level: 80 },
+        { name: "System Integration", level: 85 },
       ],
     },
 
     {
-      title: "AI & Analytics",
+      title: "Database & Tools",
       skills: [
-        { name: "Python", level: 88 },
-        { name: "Machine Learning", level: 80 },
-        { name: "YOLOv8", level: 85 },
-        { name: "Grafana", level: 85 },
-      ],
-    },
-
-    {
-      title: "Database & Cloud",
-      skills: [
-        { name: "Firebase", level: 88 },
         { name: "MySQL", level: 85 },
         { name: "Oracle APEX", level: 80 },
-        { name: "REST APIs", level: 85 },
+        { name: "Git", level: 75 },
+        { name: "REST APIs", level: 80 },
       ],
     },
   ];
 
   const stats = [
     {
-      value: "12+",
+      value: "10+",
       label: "Technologies",
     },
     {
-      value: "5+",
+      value: "05+",
       label: "Projects",
     },
     {
-      value: "3+",
-      label: "Years Experience",
+      value: "02",
+      label: "Industry Experiences",
     },
     {
-      value: "4",
-      label: "Domains",
+      value: "04",
+      label: "Development Areas",
     },
   ];
 
   const languages = [
     "Malay (Native)",
     "English (Professional)",
+    "Indonesia (Basic)",
   ];
 
   return (
@@ -111,10 +112,10 @@ export default function Skills() {
               leading-relaxed
             "
           >
-            Technologies and tools I use to build
-            enterprise networks, intelligent systems,
-            modern applications and scalable digital
-            solutions.
+            Technologies and tools I use to develop
+            software applications, build scalable systems,
+            integrate databases, and deliver reliable
+            digital solutions for real-world problems.
           </p>
 
         </div>

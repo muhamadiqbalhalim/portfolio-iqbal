@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Hero() {
   const roles = [
-    "Network Engineer",
     "Software Engineer",
-    "Full Stack Developer",
-    "AI Solutions Builder",
+    "Software Developer",
+    "Application Developer",
+    "Digital Solution Developer",
   ];
 
   const [index, setIndex] = useState(0);
@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden bg-[#080808] px-6 md:px-12 xl:px-20"
+      className="relative min-h-screen flex items-center overflow-hidden bg-[#080808] px-6 md:px-12 xl:px-20 pb-10"
     >
       {/* Background */}
       <div className="absolute inset-0">
@@ -79,7 +79,7 @@ export default function Hero() {
               text-white
             "
           >
-            MUHAMMAD
+            MUHAMAD
             <br />
 
             <span className="text-blue-200/40 font-light">
@@ -124,24 +124,27 @@ export default function Hero() {
           </div>
 
           {/* Description */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="
-              mt-6
-              max-w-xl
-              text-zinc-400
-              text-base
-              md:text-lg
-              leading-relaxed
-            "
-          >
-            Network Engineer at Telekom Malaysia specializing in
-            software development, AI-powered analytics, RFID
-            tracking systems, automation solutions and modern
-            digital experiences.
-          </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="
+            mt-5
+            max-w-3xl
+            text-zinc-400
+            text-sm
+            md:text-base
+            leading-6
+          "
+        >
+          Computer Science graduate with experience in software
+          development, system integration, and enterprise applications.
+
+          Skilled in Python, Java, SQL, and modern development
+          technologies with hands-on experience in ETL development,
+          machine learning projects, web applications, and mobile
+          application development.
+        </motion.p>
 
           {/* Stats */}
           <motion.div
@@ -152,7 +155,7 @@ export default function Hero() {
               grid
               grid-cols-3
               gap-4
-              mt-10
+              mt-8
               max-w-xl
             "
           >
@@ -190,11 +193,11 @@ export default function Hero() {
               "
             >
               <h3 className="text-2xl font-semibold text-white">
-                3+
+                2
               </h3>
 
               <p className="text-[10px] uppercase tracking-[0.25em] text-zinc-500 mt-1">
-                Years
+                Industry
               </p>
             </div>
 
@@ -225,13 +228,13 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
-            className="flex flex-wrap items-center gap-6 mt-12"
+            className="flex flex-wrap items-center gap-6 mt-7"
           >
             <a
               href="#projects"
               className="
                 px-8
-                py-4
+                py-3
                 rounded-full
                 bg-blue-500
                 text-white
@@ -263,56 +266,102 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* IMAGE */}
+       {/* IMAGE */}
         <div className="lg:col-span-5 order-1 lg:order-2">
           <motion.div
             initial={{
               opacity: 0,
-              scale: 0.95,
+              y: 40,
             }}
             animate={{
               opacity: 1,
-              scale: 1,
+              y: [0, -10, 0],
             }}
             transition={{
-              duration: 1,
+              duration: 5,
+              repeat: Infinity,
+              repeatType: "loop",
             }}
             className="
               relative
-              max-w-[260px]
-              md:max-w-[320px]
-              lg:max-w-[380px]
-              mx-auto
-              aspect-[3/4]
-              group
+              flex
+              justify-center
+              items-center
+              py-8
             "
           >
+
+            {/* Main Glow */}
             <div
               className="
                 absolute
-                inset-0
-                border
-                border-blue-400/10
-                translate-x-5
-                translate-y-5
+                w-[320px]
+                h-[320px]
+                md:w-[420px]
+                md:h-[420px]
+                rounded-full
+                bg-blue-500/20
+                blur-[120px]
               "
             />
 
-            <img
-              src="/Profile.png"
-              alt="Muhammad Iqbal"
+            {/* Secondary Glow */}
+            <div
               className="
-                relative
-                w-full
-                h-full
-                object-cover
-                grayscale
-                transition-all
-                duration-700
-                group-hover:grayscale-0
-                group-hover:scale-[1.03]
+                absolute
+                w-[250px]
+                h-[250px]
+                md:w-[320px]
+                md:h-[320px]
+                rounded-full
+                bg-blue-300/10
+                blur-[80px]
               "
             />
+
+            {/* Ring */}
+            <div
+              className="
+                absolute
+                w-[280px]
+                h-[280px]
+                md:w-[380px]
+                md:h-[380px]
+                rounded-full
+                border
+                border-blue-400/20
+              "
+            />
+
+            {/* Ring 2 */}
+            <div
+              className="
+                absolute
+                w-[320px]
+                h-[320px]
+                md:w-[430px]
+                md:h-[430px]
+                rounded-full
+                border
+                border-white/5
+              "
+            />
+
+            {/* Profile Image */}
+            <img
+              src="/Profile.png"
+              alt="Muhamad Iqbal"
+              className="
+                relative
+                z-10
+                w-[300px]
+                md:w-[400px]
+                lg:w-[500px]
+                object-contain
+                drop-shadow-[0_0_40px_rgba(59,130,246,0.35)]
+              "
+            />
+
           </motion.div>
         </div>
 

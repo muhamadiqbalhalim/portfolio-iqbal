@@ -62,65 +62,62 @@ export default function Footer() {
                 text-white
               "
             >
-              IQBAL
+              MUHAMAD IQBAL BIN ABD HALIM
             </h2>
 
-            <p
-              className="
-                mt-4
-                text-zinc-500
-                max-w-md
-                leading-relaxed
-              "
-            >
-              Building intelligent systems, modern web
-              applications and scalable technology solutions
-              that create measurable impact.
-            </p>
+          <p
+            className="
+              mt-4
+              text-zinc-500
+              max-w-md
+              leading-relaxed
+            "
+          >
+            Computer Science graduate focused on software
+            development, application engineering, and
+            creating reliable digital experiences.
+          </p>
 
           </div>
 
-          {/* Right */}
-          <div className="flex flex-col items-start lg:items-end">
+            <div className="mt-8 flex gap-6">
 
-            <p
+            <a
+              href="https://linkedin.com/in/muhamadiqbalhalim"
+              target="_blank"
+              rel="noreferrer"
               className="
-                text-[10px]
-                uppercase
-                tracking-[0.4em]
-                text-zinc-600
-                mb-5
+                text-zinc-500
+                hover:text-blue-400
+                transition
               "
             >
-              Navigation
-            </p>
+              LinkedIn
+            </a>
 
-            <div
+            <a
+              href="https://github.com/muhamadiqbalhalim"
+              target="_blank"
+              rel="noreferrer"
               className="
-                flex
-                flex-wrap
-                gap-6
+                text-zinc-500
+                hover:text-blue-400
+                transition
               "
             >
-              {navItems.map((item) => (
-                <Link
-                  key={item}
-                  to={item}
-                  smooth
-                  duration={700}
-                  offset={-80}
-                  className="
-                    cursor-pointer
-                    text-zinc-400
-                    hover:text-white
-                    transition
-                    capitalize
-                  "
-                >
-                  {item}
-                </Link>
-              ))}
-            </div>
+              GitHub
+            </a>
+
+            <a
+              href="mailto:muhamadiqbaljob@gmail.com"
+              className="
+                text-zinc-500
+                hover:text-blue-400
+                transition
+              "
+            >
+              Email
+            </a>
 
           </div>
 
@@ -141,7 +138,7 @@ export default function Footer() {
           >
 
             <p className="text-sm text-zinc-600">
-              © {new Date().getFullYear()} Muhammad Iqbal. All rights reserved.
+              © {new Date().getFullYear()} Muhamad Iqbal. All rights reserved.
             </p>
 
             <Link
